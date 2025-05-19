@@ -1,0 +1,66 @@
+/* body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.container {
+  display: grid;
+  /* column-gap: 2px; */
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.cell {
+  cursor: pointer;
+  border: solid;
+  border-width: 2px;
+  border-color: blueviolet;
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  font-size: 45px;
+}
+
+#cell1 {
+  border-style: hidden solid solid hidden;
+}
+#cell2 {
+  border-style: hidden solid solid solid;
+}
+#cell3 {
+  border-style: hidden hidden solid solid;
+}
+#cell4 {
+  border-style: solid solid solid hidden;
+}
+#cell6 {
+  border-style: solid hidden solid solid;
+}
+
+#cell7 {
+  border-style: solid solid hidden hidden;
+}
+#cell8 {
+  border-style: solid solid hidden solid;
+}
+#cell9 {
+  border-style: solid hidden hidden solid;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.reset-btn {
+  padding: 10px 40px 10px;
+  background-color: rgb(97, 20, 170);
+  margin-top: 50px;
+  color: black;
+  font-size: 1.25rem;
+  box-shadow: 10px 10px 8px #888888;
+  cursor: pointer;
+}
